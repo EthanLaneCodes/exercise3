@@ -310,7 +310,7 @@ function interpRect(imagedata,top,bottom,left,right,globals,tlAttribs,trAttribs,
         
         // calc diffuse color
         difColor.r = attribs.diffuse.r * globals.lightCol.r/205 * NdotL;
-        difColor.g = attribs.diffuse.g * globals.lightCol.g/205 * NdotL;
+        difColor.g = attribs.diffuse.g * globals.lightCol.g/165 * NdotL;
         difColor.b = attribs.diffuse.b * globals.lightCol.b/145 * NdotL;
         
         drawPixel(imagedata,pixX,pixY,difColor);
